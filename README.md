@@ -2,17 +2,17 @@
 
 Encontre sua primeira contribuição open source com contexto, evidências e um caminho para começar.
 
-**Status: planejamento do MVP. Ainda não há aplicação executável, integração validada ou infraestrutura provisionada.**
+**Status: Em desenvolvimento**
 
 ## A ideia
 
-O RepoMentor ajudará desenvolvedores a compreender issues e a começar a contribuir com projetos open source. O MVP será dedicado ao [Meteor](https://github.com/meteor/meteor): analisará documentação, estrutura do código e issues abertas para recomendar oportunidades e produzir um guia de contribuição.
+O RepoMentor ajudará desenvolvedores a compreender issues e a começar a contribuir com projetos open source. O MVP será dedicado a analisar documentação, estrutura do código e issues abertas para recomendar oportunidades e produzir um guia de contribuição.
 
 O Gemma 4 explicará a arquitetura, avaliará a dificuldade das issues e sugerirá áreas para investigar. Cada recomendação deverá apresentar evidências e distinguir fatos de hipóteses. Caminhos sugeridos serão conferidos contra os arquivos coletados.
 
 ## Fluxo planejado
 
-1. Consultar dados reais e issues abertas de `meteor/meteor`.
+1. Consultar dados reais e issues abertas.
 2. Selecionar documentação e arquivos relevantes, com limites de tamanho.
 3. Enviar o contexto ao Gemma 4 no Google Cloud.
 4. Validar a resposta e os caminhos citados.
@@ -28,9 +28,9 @@ O Gemma 4 explicará a arquitetura, avaliará a dificuldade das issues e sugerir
 | Dados | GitHub REST API, somente leitura |
 | Testes | Pytest, Vitest e React Testing Library |
 
-A variante inicial candidata é Gemma 4 26B A4B. A seleção final depende de uma chamada real, qualidade, latência, região, quotas e orçamento. Modelo e endpoint serão configuráveis. Não haverá substituição silenciosa por Gemini ou outro modelo.
+A variante inicial candidata é Gemma 4 26B A4B. A seleção final depende de uma chamada real, qualidade, latência, região, quotas e orçamento. Modelo e endpoint serão configuráveis.
 
-O processamento será em nuvem: o contexto público selecionado do Meteor será enviado ao Google Cloud. Credenciais ficarão exclusivamente no backend.
+O processamento será em nuvem: o contexto público selecionado será enviado ao Google Cloud. Credenciais ficarão exclusivamente no backend.
 
 ## Escopo
 
@@ -46,19 +46,25 @@ O MVP inclui análise arquitetural, classificação explicada de issues, verific
 ## Próximas entregas
 
 - [x] Criar a base documental do repositório.
-- [ ] Inicializar frontend e backend com endpoint de saúde.
-- [ ] Validar acesso ao Gemma 4 no Google Cloud.
-- [ ] Consultar issues e contexto reais do Meteor.
-- [ ] Implementar análise com evidências e guia de contribuição.
-- [ ] Executar testes e revisar pelo menos três issues reais.
+- [x] Inicializar frontend e backend com endpoint de saúde.
+- [x] Validar acesso ao Gemma 4 no Google Cloud.
+- [x] Consultar issues e contexto reais: Respositorio Utilizado para teste - [Meteor](https://github.com/meteor/meteor)
+- [x] Implementar análise com evidências e guia de contribuição.
+- [x] Executar testes e revisar pelo menos três issues reais.
 - [ ] Gravar demonstração e preparar a primeira release.
-
-Os comandos de instalação serão adicionados quando existir código executável. Nenhum teste de aplicação foi executado nesta etapa documental.
 
 ## Participação no evento
 
-A categoria pretendida é Best Use of Gemma. Este repositório não comprova inscrição nem elegibilidade; a demonstração, o enquadramento no tema e as regras do evento precisam ser verificados antes da submissão.
+Hacktoberfest Hack Day São José dos Campos
+A categoria pretendida é:  Best Use of Gemma 4
 
 ## Licença
 
-[MIT](LICENSE). O projeto não é afiliado ao Meteor ou ao Google. Modelos, dependências e materiais consultados mantêm suas próprias licenças.
+[MIT](LICENSE). O projeto não é afiliado ao Google. Modelos, dependências e materiais consultados mantêm suas próprias licenças.
+
+## Autores
+
+- [Flora Rosa Pupo](https://github.com/FloraRosaPupo)
+- [Daniel Dias](https://github.com/Danieldpereira)
+- [Lucas Roberto](https://github.com/LucasR022)
+- [Ana Claudia](https://github.com/anacnogueira)
